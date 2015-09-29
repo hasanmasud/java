@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.smartcompute.master</groupId>
+	<groupId>com.smartcompute.masterpom</groupId>
 	<artifactId>MASTER-POM</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
@@ -12,8 +12,16 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<junit.version>4.10</junit.version>
 
+
+		<junit.version>4.10</junit.version>
+		<spring-webmvc.version>4.1.0.RELEASE</spring-webmvc.version>
+		<spring-context.version>4.1.0.RELEASE</spring-context.version>
+		<spring-core.version>4.1.0.RELEASE</spring-core.version>
+		<spring-beans.version>4.1.0.RELEASE</spring-beans.version>
+		<spring-aop.version>4.1.0.RELEASE</spring-aop.version>
+		<commons-logging.version>1.2</commons-logging.version>
+		<avalon-framework.version>4.1.5</avalon-framework.version>
 
 	</properties>
 
@@ -25,11 +33,68 @@
 				<version>${junit.version}</version>
 				<scope>test</scope>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-webmvc</artifactId>
+				<version>${spring-webmvc.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context</artifactId>
+				<version>${spring-context.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-core</artifactId>
+				<version>${spring-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-beans</artifactId>
+				<version>${spring-beans.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-aop</artifactId>
+				<version>${spring-aop.version}</version>
+			</dependency>
+
+
+
+
+
+			<dependency>
+				<groupId>commons-logging</groupId>
+				<artifactId>commons-logging</artifactId>
+				<version>${commons-logging.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>avalon-framework</groupId>
+				<artifactId>avalon-framework</artifactId>
+				<version>${avalon-framework.versio}</version>
+			</dependency>
+
 
 
 
 		</dependencies>
 	</dependencyManagement>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apace.maven.plugins</groupId>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<version>2.10</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apace.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>2.10</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 
 
 </project>
