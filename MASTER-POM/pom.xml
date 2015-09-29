@@ -23,6 +23,8 @@
 		<commons-logging.version>1.2</commons-logging.version>
 		<avalon-framework.version>4.1.5</avalon-framework.version>
 
+		<spring-boot.version>1.2.4.RELEASE</spring-boot.version>
+
 	</properties>
 
 	<dependencyManagement>
@@ -58,6 +60,26 @@
 				<artifactId>spring-aop</artifactId>
 				<version>${spring-aop.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-autoconfigure</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-actuator</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
 
 
 
@@ -73,10 +95,6 @@
 				<artifactId>avalon-framework</artifactId>
 				<version>${avalon-framework.versio}</version>
 			</dependency>
-
-
-
-
 		</dependencies>
 	</dependencyManagement>
 	<build>
