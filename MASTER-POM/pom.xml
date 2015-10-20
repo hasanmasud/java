@@ -13,7 +13,6 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-
 		<junit.version>4.10</junit.version>
 		<spring-webmvc.version>4.1.0.RELEASE</spring-webmvc.version>
 		<spring-context.version>4.1.0.RELEASE</spring-context.version>
@@ -22,7 +21,8 @@
 		<spring-aop.version>4.1.0.RELEASE</spring-aop.version>
 		<commons-logging.version>1.2</commons-logging.version>
 		<avalon-framework.version>4.1.5</avalon-framework.version>
-
+		<jackson-core.version>2.6.2</jackson-core.version>
+		<jackson-core.version>2.6.2</jackson-core.version>
 		<spring-boot.version>1.1.6.RELEASE</spring-boot.version>
 
 	</properties>
@@ -80,6 +80,18 @@
 				<artifactId>spring-boot-starter-web</artifactId>
 				<version>${spring-boot.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-batch</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+
+
+			<dependency>
+				<groupId>org.springframework.batch</groupId>
+				<artifactId>spring-batch-core</artifactId>
+				<version>3.0.5.RELEASE</version>
+			</dependency>
 
 
 
@@ -95,6 +107,17 @@
 				<artifactId>avalon-framework</artifactId>
 				<version>${avalon-framework.versio}</version>
 			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-core</artifactId>
+				<version>${jackson-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-core</artifactId>
+				<version>${jackson-core.verion}</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 	<build>
@@ -131,5 +154,4 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-
 </project>
