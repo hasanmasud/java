@@ -3,7 +3,7 @@ package com.smartcompute.datastructurealrithms.strings;
 import java.util.HashMap;
 import java.util.Map;
 
-public class StringManipulation {
+public class DuplicateChars {
 	
 	
 	/**
@@ -14,9 +14,9 @@ public class StringManipulation {
 	 * null or empty String etc. Bonus points if you also write unit tests for normal and edge cases.
 	 */
 	public static void printDuplicateChars(String word){
-		
 		char[] ch = word.toCharArray();
 		Map<Character,Integer> map = new HashMap<Character, Integer>();
+		
 		for(Character c : ch){
 			if(map.containsKey(c)){
 				map.put(c,map.get(c)+1);
@@ -34,23 +34,7 @@ public class StringManipulation {
 	
 	
 	
-	public static boolean checkAnagram(String first,String second){
-		
-		if(first.length() != second.length()){
-			return false;
-		}
-		char ch[] = first.toCharArray();
-		StringBuilder strBuilder = new StringBuilder(second);
-		for(char c : ch){
-			int index = strBuilder.indexOf(""+c);
-			if(index == -1){
-				return false;
-			}else{
-				strBuilder.deleteCharAt(index);
-			}
-		}
-		return (strBuilder.length() == 0) ? true : false;
-	}
+
 	
 	
 	
