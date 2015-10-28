@@ -1,8 +1,9 @@
 package com.smartcompute.datastructurealrithms.strings.test;
 
-import com.smartcompute.datastructurealrithms.strings.StringManipulation;
-
 import junit.framework.TestCase;
+
+import com.smartcompute.datastructurealrithms.strings.CheckAnagram;
+import com.smartcompute.datastructurealrithms.strings.DuplicateChars;
 
 public class StringManipulationTest extends TestCase {
 	
@@ -12,12 +13,12 @@ public class StringManipulationTest extends TestCase {
 	}
 	
 	public void testDuplicateChars(){
-		StringManipulation.printDuplicateChars("javav");
+		DuplicateChars.printDuplicateChars("javav");
 		assertEquals(true, true);
 	}
 	
 	public void testAnagram(){
-		assertEquals(true, StringManipulation.checkAnagram("mary", "army"));
+		assertEquals(true, CheckAnagram.checkAnagram("mary", "army"));
 	}
 	
 }
