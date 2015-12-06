@@ -11,7 +11,7 @@ public class InsertionSort {
 	
 	public int[] sort(int []a){
 		
-		for(int i = 0 ; i< a.length ; i++){
+		for(int i = 1 ; i< a.length ; i++){
 			
 			for(int j = i ; j > 0; j--){
 				
