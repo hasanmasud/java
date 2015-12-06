@@ -1,0 +1,49 @@
+package com.testdome.exam;
+
+import java.util.LinkedList;
+
+public class BinarySearchTree {
+	public static boolean isValidBST(Node root) {
+		// throw new UnsupportedOperationException("Waiting to be implemented.");
+		if (root == null) {
+			return true;
+		}
+		LinkedList<BNode> queue = new LinkedList<BNode>();
+		BNode rootBnNode = new BNode(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+		queue.add(rootBnNode);
+		
+		while (!queue.isEmpty()) {
+			BNode b = queue.poll();
+			if (b.n.value <= b.left || b.n.value >= b.right) {
+				return false;
+			}
+			if (b.n.left != null) {
+				queue.offer(new BNode(b.n.left, b.left, b.n.value));
+			}
+			if (b.n.right != null) {
+				queue.offer(new BNode(b.n.right, b.n.value, b.right));
+			}
+		}
+		return true;
+	}
+
+	public static class BNode {
+		public Node n;
+		public int left;
+		public int right;
+
+		public BNode(Node n, int left, int right) {
+			this.n = n;
+			this.left = left;
+			this.right = right;
+		}
+	}
+
+	public static void main(String[] args) {
+		Node n1 = new Node(1, null, null);
+		Node n3 = new Node(3, null, null);
+		Node n2 = new Node(2, n1, n3);
+		System.out.println(isValidBST(n2));
+	}
+
+}
