@@ -1,4 +1,4 @@
-package com.testdome.exam;
+package com.smartcompute.testdome;
 public class Run {
     public static int indexOfLongestRun(String str) {
         //throw new UnsupportedOperationException("Waiting to be implemented.");

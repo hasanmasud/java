@@ -7,18 +7,6 @@ package com.smartcompute.testdome;
  *
  */
 
-
-class Node {
-    public int value;
-    public Node left, right;
-
-    public Node(int value, Node left, Node right) {
-        this.value = value;
-        this.left = left;
-        this.right = right;
-    }
-}
-
 public class BinarySearchTree {
     public static boolean isValidBST(Node root) {
         //throw new UnsupportedOperationException("Waiting to be implemented.");
