@@ -29,7 +29,7 @@ public class PremCheck {
 			}else if(A[0] - A[1] == -1){
 				return A[0];
 			}else{
-				return 1;
+				return 0;
 			}
 		}
 		
