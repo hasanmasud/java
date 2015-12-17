@@ -16,6 +16,7 @@ package com.smartcompute.codility.lessons.lesson1;
  X = 10
  Y = 85
  D = 30
+ 
  the function should return 3, because the frog will be positioned as follows:
 
  after the first jump, at position 10 + 30 = 40
