@@ -6,7 +6,11 @@ public class PtrListLen {
 		public int value;
 		public IntList next;
 	}
-
+	/**
+	 * it gives 100%
+	 * @param L
+	 * @return
+	 */
 	public int solution(IntList L) {
 		if (L == null) {
 			return 0;

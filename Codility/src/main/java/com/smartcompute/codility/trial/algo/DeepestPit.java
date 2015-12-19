@@ -2,8 +2,13 @@ package com.smartcompute.codility.trial.algo;
 
 public class DeepestPit {
 
+	/**
+	 * it gives 100%
+	 * @param A
+	 * @return
+	 */
 	public int solution(int[] A) {
-		// write your code in C# 5.0 with .NET 4.5 (Mono)
+		
 		int P = -1, R = -1, Q = -1, depth = -1;
 
 		for (int i = 0; i < A.length - 1; i++) {
@@ -14,19 +19,19 @@ public class DeepestPit {
 				}
 			} else {
 				if (R < 0) {
-					if (A[i] > A[i + 1])
+					if (A[i] > A[i + 1]){
 						Q++;
-
-					if (A[i] < A[i + 1])
+					}
+					if (A[i] < A[i + 1]){
 						R = i + 1;
-
+					}
 					if (A[i] == A[i + 1]) {
 						P = Q = R = -1;
 					}
 				} else {
-					if (A[i] < A[i + 1])
+					if (A[i] < A[i + 1]){
 						R++;
-					else {
+					}else {
 						depth = Math.max(depth,
 								Math.min(A[P] - A[Q], A[R] - A[Q]));
 						if (A[i] > A[i + 1]) {
