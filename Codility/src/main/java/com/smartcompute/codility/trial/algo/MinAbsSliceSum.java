@@ -1,21 +1,32 @@
 package com.smartcompute.codility.trial.algo;
 
+import java.util.Arrays;
+
+// need to write it correctly
 
 public class MinAbsSliceSum {
 	public static int solution(int[] A) {
+		if(A.length < 1 ){
+			return 0;
+		}
+		if(A.length == 1){
+			return Math.abs(A[0]);
+		}
 		
-        long minSum = Long.MAX_VALUE;
-        int cumulativeSum= 0;	
-        for (int currentIndex = 0; currentIndex < A.length; currentIndex++) {
-            int eachArrayItem = A[currentIndex];
-            cumulativeSum += eachArrayItem;
-            if( Math.abs(cumulativeSum)  < minSum){
-            	minSum = Math.abs(cumulativeSum);
-            }else if( Math.abs(cumulativeSum) == 0 ){
-            	return 0;
-            }
-        }
-		return (int)minSum;
+		int start = 0;
+		int end = A.length -1;
+		long min = Long.MAX_VALUE;
+		Arrays.sort(A);
+		while(start <= end){
+			long temp = A[start] + A[end];
+			min = Math.min(min , Math.abs(temp));
+			if(temp <= 0){
+				start++;
+			}else{
+				end--;
+			}
+		}
+		return (int)min;
 	}
 	
 	
