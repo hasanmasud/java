@@ -6,8 +6,9 @@ package com.smartcompute.codinginterview.interviewset1;
  * 
  * Find the maximum sum of subarray of a given array.
  * 
+ * Time Complexity 		: O(N)
+ * Space Complexity 	: O(1)
  * 
- *
  */
 public class MaximumSubSequence {
 
