@@ -10,6 +10,7 @@ package com.smartcompute.testdome;
 public class BinarySearchTree {
     public static boolean isValidBST(Node root) {
         //throw new UnsupportedOperationException("Waiting to be implemented.");
+    	
     	if(root == null){
     		return true;
     	}
