@@ -1,6 +1,5 @@
 package com.smartcompute.codility.trial.algo;
 
-import java.util.Arrays;
 
 // need to write it correctly
 
@@ -12,18 +11,18 @@ public class MinAbsSliceSum {
 		if(A.length == 1){
 			return Math.abs(A[0]);
 		}
-		
-		int start = 0;
-		int end = A.length -1;
 		long min = Long.MAX_VALUE;
-		Arrays.sort(A);
-		while(start <= end){
-			long temp = A[start] + A[end];
-			min = Math.min(min , Math.abs(temp));
-			if(temp <= 0){
-				start++;
-			}else{
-				end--;
+		
+		for(int i = 0 ; i < A.length - 1 ; i++){
+			long temp = A[i];
+			for(int j = i+1 ; j < A.length; j++){
+				temp  += A[j];
+				if(min > Math.abs(temp)){
+					min = Math.abs(temp);
+				}
+				if(min == 0){
+					return 0;
+				}
 			}
 		}
 		return (int)min;
