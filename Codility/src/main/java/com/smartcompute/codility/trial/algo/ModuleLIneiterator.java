@@ -51,6 +51,7 @@ public class ModuleLIneiterator implements Iterable<Integer> {
 				return false;
 			}
 			
+			//whatever logic to put here
 			private boolean check(String s){
 				if(s.charAt(0) == '+' || s.charAt(0) == '-'){
 					int i = s.charAt(1);
