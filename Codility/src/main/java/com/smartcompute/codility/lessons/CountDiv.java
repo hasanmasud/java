@@ -8,6 +8,8 @@ public class CountDiv {
 			++offsetForLeftRange;
 		}
 		return (B / K) - (A / K) + offsetForLeftRange;
+		
+		
 	}
 
 }
