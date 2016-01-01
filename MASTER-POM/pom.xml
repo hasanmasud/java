@@ -12,6 +12,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
+		<!-- java ee version -->
+		<jee-api.version>6.0</jee-api.version>
+
 		<junit.version>4.10</junit.version>
 		<spring-webmvc.version>4.1.0.RELEASE</spring-webmvc.version>
 		<spring-context.version>4.1.0.RELEASE</spring-context.version>
@@ -108,6 +111,17 @@
 				<artifactId>jackson-core</artifactId>
 				<version>${jackson-core.verion}</version>
 			</dependency>
+
+
+
+			<!-- provided dependencies -->
+			<dependency>
+				<groupId>javax</groupId>
+				<artifactId>javaee-api</artifactId>
+				<version>${jee-api.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
 
 		</dependencies>
 	</dependencyManagement>
