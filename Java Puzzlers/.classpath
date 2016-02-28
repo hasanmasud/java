@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="java-puzzlers/|java-puzzlers/|java-puzzlers/10-advanced-puzzlers/|java-puzzlers/10-advanced-puzzlers/puzzle-86/|java-puzzlers/10-advanced-puzzlers/puzzle-95/|java-puzzlers/10-advanced-puzzlers/puzzle-94/|java-puzzlers/10-advanced-puzzlers/puzzle-87/|java-puzzlers/10-advanced-puzzlers/puzzle-88/|java-puzzlers/10-advanced-puzzlers/puzzle-89/|java-puzzlers/10-advanced-puzzlers/puzzle-90/|java-puzzlers/10-advanced-puzzlers/puzzle-91/|java-puzzlers/10-advanced-puzzlers/puzzle-92/|java-puzzlers/10-advanced-puzzlers/puzzle-93/" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
