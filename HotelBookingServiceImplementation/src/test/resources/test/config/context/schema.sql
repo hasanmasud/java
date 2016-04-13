@@ -1,0 +1,6 @@
+create table ROOM (
+	ID INT PRIMARY KEY,
+	SIZE INT,
+	STATUS VARCHAR2(10 CHAR),
+	PRICE  INT
+);

@@ -1,0 +1,3 @@
+delete from ROOM;
+COMMIT;
+DROP TABLE ROOM;
