@@ -111,6 +111,166 @@
 				<artifactId>jackson-core</artifactId>
 				<version>${jackson-core.verion}</version>
 			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-storage -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-storage</artifactId>
+				<version>4.4.0</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-core -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-core</artifactId>
+				<version>0.9.7</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-mgmt-resources -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-mgmt-resources</artifactId>
+				<version>0.9.7</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-client-runtime -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-client-runtime</artifactId>
+				<version>1.0.0-beta3</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-client-authentication -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-client-authentication</artifactId>
+				<version>1.0.0-beta3</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/api-annotations -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>api-annotations</artifactId>
+				<version>0.0.1</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/adal4j -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>adal4j</artifactId>
+				<version>1.1.3</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-svc-mgmt -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-svc-mgmt</artifactId>
+				<version>0.9.7</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-mgmt-network -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-mgmt-network</artifactId>
+				<version>0.9.7</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-mgmt-storage -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-mgmt-storage</artifactId>
+				<version>0.9.7</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-mgmt-storage -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-mgmt-storage</artifactId>
+				<version>0.9.7</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-mgmt-compute -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-mgmt-compute</artifactId>
+				<version>0.9.7</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-svc-mgmt-compute -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-svc-mgmt-compute</artifactId>
+				<version>0.9.7</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/applicationinsights-core -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>applicationinsights-core</artifactId>
+				<version>1.0.6</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-eventhubs -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-eventhubs</artifactId>
+				<version>0.9.0</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-keyvault-webkey -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-keyvault-webkey</artifactId>
+				<version>1.0.0-beta3</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-management-compute -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-management-compute</artifactId>
+				<version>0.8.0</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-documentdb -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-documentdb</artifactId>
+				<version>1.9.4</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-management-storage -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-management-storage</artifactId>
+				<version>0.8.0</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-keyvault-core -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-keyvault-core</artifactId>
+				<version>0.9.7</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-keyvault-core -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-keyvault-core</artifactId>
+				<version>0.9.7</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-mgmt-utility -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-mgmt-utility</artifactId>
+				<version>0.9.7</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-keyvault -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-keyvault</artifactId>
+				<version>0.9.7</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-mgmt-datalake-store -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-mgmt-datalake-store</artifactId>
+				<version>1.0.0-beta1.3</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-mgmt-datalake-store -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-mgmt-datalake-store</artifactId>
+				<version>1.0.0-beta1.3</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-keyvault-webkey -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-keyvault-webkey</artifactId>
+				<version>1.0.0-beta3</version>
+			</dependency>
+
+
+
 
 
 
