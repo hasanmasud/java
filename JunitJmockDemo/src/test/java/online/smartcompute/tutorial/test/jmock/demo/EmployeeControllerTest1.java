@@ -10,7 +10,6 @@ import org.junit.Test;
 
 import online.smartcompute.tutorial.jmock.demo.EmployeeController;
 import online.smartcompute.tutorial.jmock.demo.EmployeeInterface;
-import online.smartcompute.tutorial.jmock.demo.EmployeeService;
 
 public class EmployeeControllerTest1 {
 	
@@ -26,17 +25,27 @@ public class EmployeeControllerTest1 {
 	 }
 	 
 	 
+	 
+	 
 	 @Test
 	 public void getCount(){
 		 
 		 this.context.checking(new Expectations(){
 			 {
 				 oneOf(mock).getEmployeeCount(); will(returnValue(100));
+				 oneOf(mock).getEmployeeCount(); will(returnValue(200));
+				 oneOf(mock).getEmployeeCount(); will(returnValue(300));
 			 }
 		 });
 		 
 		 int expv = this.tobeTested.getProjectedEmployeeCount();
 		 assertEquals(expv, 200);
+		 
+		 expv = this.tobeTested.getProjectedEmployeeCount();
+		 assertEquals(expv, 400);
+		 
+		 expv = this.tobeTested.getProjectedEmployeeCount();
+		 assertEquals(expv, 600);
 	 }
 	 
 }

@@ -18,7 +18,7 @@ public class EmployeeControllerTest2 {
 	private EmployeeController tobeTested = new EmployeeController();
 	 
 	 private Mockery context = new JUnit4Mockery(){{
-		 //setImposteriser(ClassImposteriser.INSTANCE);
+		 setImposteriser(ClassImposteriser.INSTANCE);
 	 }};
 	 
 	 @Before
@@ -28,17 +28,29 @@ public class EmployeeControllerTest2 {
 	 }
 	 
 	 
+	 
+	 
 	 @Test
 	 public void getCount(){
 		 
 		 this.context.checking(new Expectations(){
 			 {
-				 oneOf(mock).getEmployeeCount(); will(returnValue(100));
+				 atLeast(1).of (mock).getEmployeeCount();will(onConsecutiveCalls(
+																			       returnValue(100),
+																			       returnValue(200),
+																			       returnValue(300)));
+				 
+				 //allowing (mock).getEmployeeCount();will(throwException(new IllegalArgumentException("you cannot withdraw nothing!")));
 			 }
 		 });
 		 
 		 int expv = this.tobeTested.getProjectedEmployeeCount();
 		 assertEquals(expv, 200);
+		 expv = this.tobeTested.getProjectedEmployeeCount();
+		 assertEquals(expv, 400);
+		 expv = this.tobeTested.getProjectedEmployeeCount();
+		 assertEquals(expv, 600);
+		 
 	 }
 	 
 }
