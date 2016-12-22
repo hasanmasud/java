@@ -1,0 +1,5 @@
+com\smartcompute\nl\hotelmanagent\data\Room.class
+com\smartcompute\nl\hotelmanagent\interfaces\RoomBookingServiceClient.class
+com\smartcompute\nl\hotelmanagent\interfaces\RoomBookingException.class
+com\smartcompute\nl\hotelmanagent\interfaces\RoomBookingService.class
+com\smartcompute\nl\hotelmanagent\interfaces\RoomBookingStatus.class
