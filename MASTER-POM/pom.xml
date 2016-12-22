@@ -1,21 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.smartcompute.masterpom</groupId>
+	<groupId>online.smartcompute.masterpom</groupId>
 	<artifactId>MASTER-POM</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-
 	<name>MASTER-POM</name>
 	<url>http://maven.apache.org</url>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
 		<!-- java ee version -->
 		<jee-api.version>6.0</jee-api.version>
-
-		<junit.version>4.10</junit.version>
+		<junit.version>4.12</junit.version>
 		<spring-webmvc.version>4.1.0.RELEASE</spring-webmvc.version>
 		<spring-context.version>4.1.0.RELEASE</spring-context.version>
 		<spring-core.version>4.1.0.RELEASE</spring-core.version>
@@ -27,7 +23,6 @@
 		<jackson-core.version>2.6.2</jackson-core.version>
 		<spring-boot.version>1.1.6.RELEASE</spring-boot.version>
 	</properties>
-
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -123,7 +118,6 @@
 				<artifactId>azure-core</artifactId>
 				<version>0.9.7</version>
 			</dependency>
-
 			<!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-mgmt-resources -->
 			<dependency>
 				<groupId>com.microsoft.azure</groupId>
@@ -268,12 +262,6 @@
 				<artifactId>azure-keyvault-webkey</artifactId>
 				<version>1.0.0-beta3</version>
 			</dependency>
-
-
-
-
-
-
 			<!-- provided dependencies -->
 			<dependency>
 				<groupId>javax</groupId>
@@ -281,8 +269,6 @@
 				<version>${jee-api.version}</version>
 				<scope>provided</scope>
 			</dependency>
-
-
 		</dependencies>
 	</dependencyManagement>
 	<build>
