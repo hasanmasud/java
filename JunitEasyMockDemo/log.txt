@@ -1,0 +1,99 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JunitEasyMockDemo 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.2:sonar (default-cli) @ JunitEasyMockDemo ---
+[INFO] User cache: C:\Users\hp pc\.sonar\cache
+[INFO] Load global repositories
+[INFO] Load global repositories (done) | time=232ms
+[INFO] User cache: C:\Users\hp pc\.sonar\cache
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=5ms
+[INFO] SonarQube version: 6.2
+[INFO] Default locale: "en_IN", source code encoding: "UTF-8"
+[INFO] Process project properties
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=166ms
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=30ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=381ms
+[INFO] Publish mode
+[INFO] -------------  Scan JunitEasyMockDemo
+[INFO] Load server rules
+[INFO] Load server rules (done) | time=105ms
+[INFO] Initializer GenericCoverageSensor
+[INFO] Initializer GenericCoverageSensor (done) | time=0ms
+[INFO] Base dir: F:\MyGitHubRepository\java\JunitEasyMockDemo
+[INFO] Working dir: F:\MyGitHubRepository\java\JunitEasyMockDemo\target\sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Source encoding: UTF-8, default locale: en_IN
+[INFO] Index files
+[INFO] 7 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Sensor Lines Sensor
+[INFO] Sensor Lines Sensor (done) | time=14ms
+[INFO] Sensor JavaSquidSensor
+[INFO] Configured Java source version (sonar.java.source): 5
+[INFO] JavaClasspath initialization
+[WARNING] Bytecode of dependencies was not provided for analysis of source files, you might end up with less precise results. Bytecode can be provided using sonar.java.libraries property
+[INFO] JavaClasspath initialization (done) | time=14ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=1ms
+[INFO] Java Main Files AST scan
+[INFO] 4 source files to be analyzed
+[WARNING] Metric 'lines' is an internal metric computed by SonarQube. Provided value is ignored.
+[INFO] Java Main Files AST scan (done) | time=676ms
+[INFO] 4/4 source files have been analyzed
+[INFO] Java Test Files AST scan
+[INFO] 3 source files to be analyzed
+[INFO] Java Test Files AST scan (done) | time=296ms
+[INFO] Sensor JavaSquidSensor (done) | time=1595ms
+[INFO] Sensor SCM Sensor
+[INFO] 3/3 source files have been analyzed
+[INFO] Sensor SCM Sensor (done) | time=8ms
+[INFO] Sensor Coverage Report Import
+[INFO] Sensor Coverage Report Import (done) | time=1ms
+[INFO] Sensor Coverage Report Import
+[INFO] Sensor Coverage Report Import (done) | time=0ms
+[INFO] Sensor Unit Test Results Import
+[INFO] Sensor Unit Test Results Import (done) | time=0ms
+[INFO] Sensor SurefireSensor
+[INFO] parsing F:\MyGitHubRepository\java\JunitEasyMockDemo\target\surefire-reports
+[INFO] Sensor SurefireSensor (done) | time=153ms
+[INFO] Sensor JaCoCoSensor
+[INFO] JaCoCoSensor: JaCoCo report not found : F:\MyGitHubRepository\java\JunitEasyMockDemo\target\jacoco.exec
+[INFO] Sensor JaCoCoSensor (done) | time=1ms
+[INFO] Sensor JaCoCoItSensor
+[INFO] JaCoCoItSensor: JaCoCo IT report not found: F:\MyGitHubRepository\java\JunitEasyMockDemo\target\jacoco-it.exec
+[INFO] Sensor JaCoCoItSensor (done) | time=0ms
+[INFO] Sensor JaCoCoOverallSensor
+[INFO] Sensor JaCoCoOverallSensor (done) | time=0ms
+[INFO] Sensor XmlFileSensor
+[INFO] Sensor XmlFileSensor (done) | time=0ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=18ms
+[INFO] Sensor Code Colorizer Sensor
+[INFO] Sensor Code Colorizer Sensor (done) | time=1ms
+[INFO] Sensor CPD Block Indexer
+[INFO] JavaCpdBlockIndexer is used for java
+[INFO] Sensor CPD Block Indexer (done) | time=28ms
+[INFO] Calculating CPD for 1 files
+[INFO] CPD calculation finished
+[INFO] Analysis report generated in 217ms, dir size=24 KB
+[INFO] Analysis reports compressed in 47ms, zip size=16 KB
+[INFO] Analysis report uploaded in 41ms
+[INFO] ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard/index/online.smartcompute.tutorial.tests:JunitEasyMockDemo
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at http://localhost:9000/api/ce/task?id=AVnRcz5aqGZwALAcNiY1
+[INFO] Task total time: 4.631 s
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.078 s
+[INFO] Finished at: 2017-01-24T22:38:28+05:30
+[INFO] Final Memory: 18M/330M
+[INFO] ------------------------------------------------------------------------
