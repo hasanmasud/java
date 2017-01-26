@@ -22,6 +22,8 @@
 		<jackson-core.version>2.6.2</jackson-core.version>
 		<jackson-core.version>2.6.2</jackson-core.version>
 		<spring-boot.version>1.1.6.RELEASE</spring-boot.version>
+    	<maven.compiler.source>1.8</maven.compiler.source>
+    	<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
