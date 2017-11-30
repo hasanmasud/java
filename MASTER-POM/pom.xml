@@ -21,12 +21,87 @@
 		<avalon-framework.version>4.1.5</avalon-framework.version>
 		<jackson-core.version>2.6.2</jackson-core.version>
 		<jackson-core.version>2.6.2</jackson-core.version>
-		<spring-boot.version>1.1.6.RELEASE</spring-boot.version>
-    	<maven.compiler.source>1.8</maven.compiler.source>
-    	<maven.compiler.target>1.8</maven.compiler.target>
+		<spring-boot.version>2.0.0.M3</spring-boot.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<kafka.version>0.10.2.0</kafka.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+			<!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>kafka-clients</artifactId>
+				<version>${kafka.version}</version>
+			</dependency>
+
+
+
+			<!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka_2.11 -->
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>kafka_2.11</artifactId>
+				<version>${kafka.version}</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/org.apache.kafka/connect-api -->
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>connect-api</artifactId>
+				<version>0.10.2.0</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-streams -->
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>kafka-streams</artifactId>
+				<version>0.10.2.0</version>
+			</dependency>
+
+
+			<!-- https://mvnrepository.com/artifact/org.apache.kafka/connect-json -->
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>connect-json</artifactId>
+				<version>0.10.2.0</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-log4j-appender -->
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>kafka-log4j-appender</artifactId>
+				<version>0.10.2.0</version>
+			</dependency>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
@@ -286,16 +361,16 @@
 					<artifactId>maven-source-plugin</artifactId>
 					<version>2.10</version>
 				</plugin>
-		      <plugin>
-		        <groupId>org.apache.maven.plugins</groupId>
-		        <artifactId>maven-compiler-plugin</artifactId>
-		        <version>3.6.1</version>
-		        <configuration>
-		          <verbose>true</verbose>
-		          <fork>true</fork>
-		          <compilerVersion>1.8</compilerVersion>
-		        </configuration>
-		      </plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.6.1</version>
+					<configuration>
+						<verbose>true</verbose>
+						<fork>true</fork>
+						<compilerVersion>1.8</compilerVersion>
+					</configuration>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>

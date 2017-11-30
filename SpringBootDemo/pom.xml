@@ -10,7 +10,7 @@
 	<name>SpringBootDemo</name>
 	<url>http://maven.apache.org</url>
 	<parent>
-		<groupId>com.smartcompute.masterpom</groupId>
+		<groupId>online.smartcompute.masterpom</groupId>
 		<artifactId>MASTER-POM</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
